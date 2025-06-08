@@ -1,5 +1,5 @@
 body, main {
-    display:flex;
+    display: flex;
 }
 body> {
     flex-direction: column;
@@ -8,11 +8,21 @@ main> {
     flex-direction: row;
     flex: auto;
 }
-article> {
+article {
     flex: 2;
+}
+aside {
+    flex: 1;
+}
+
+article, aside{
     overflow-y: auto;
 }
-aside> {
-    flex: 1;
-    overflow-y: auto;
+
+article h1{
+    color: brown;
+}
+
+article table, article th, article td {
+    border: 1px solid black;
 }

@@ -21,6 +21,7 @@ dl, dt, dd,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
          margin: 0;
@@ -43,7 +44,7 @@ blockquote, q {
 }
 blockquote::before, blockquote::after,
 q::before, q:after {
-        content: ' ';
+        content: '';
         content: none;
 }
 table {
@@ -94,8 +95,9 @@ a {
             margin: 0 auto;
          }
 }
-main {
-    padding-top: 60px;}
+article {
+    padding:50px 15px;
+}
 article > *:first-child {
         margin-top: 0;;
 }
@@ -117,6 +119,10 @@ header ul {
         list-style: none;
         margin: 0;
         padding: 0;
+}
+header li {
+    display: inline;
+    vertical-align: middle;
 }
 header li:first-child {
         margin: 0;
@@ -161,7 +167,7 @@ h2 {
 }
 h3 {
             font-size: 28px;
-            margin: 25pxx 0 10px;
+            margin: 25px 0 10px;
 }          
 h4 { 
             font-size: 20px;
@@ -169,7 +175,7 @@ h4 {
             margin: 20px 0 10;
 } 
 h5 {
-            font-size: 18;
+            font-size: 18px;
             font-weight: bold;
             margin: 15px 0 10px;
 }

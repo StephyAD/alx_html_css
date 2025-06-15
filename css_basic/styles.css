@@ -1,10 +1,10 @@
 body, main {
     display: flex;
 }
-body> {
+body {
     flex-direction: column;
 }
-main> {
+main {
     flex-direction: row;
     flex: auto;
 }
